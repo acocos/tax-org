@@ -51,7 +51,7 @@ different structural constraints. Specifically, we tried algorithms that varied 
 
 This repo contains code for six algorithms, organized along those two axes:
 
-![Algorithm classification](./images/organization.png "Algorithm classification")
+![Algorithm classification](./images/classification.png "Algorithm classification")
 
 ## Contents
 
