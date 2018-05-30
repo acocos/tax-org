@@ -1,0 +1,4 @@
+0	silicon	semiconductor	hypernym
+1	microchip	semiconductor	hypernym
+2	microprocessor	semiconductor	hypernym
+3	microprocessor	microchip	hypernym
