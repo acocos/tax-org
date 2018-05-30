@@ -24,7 +24,7 @@ If you use the resources here, please cite our paper:
 Taxonomies encode knowledge about semantic hierarchies. For example,
 a *mosquito* *IS-A* *insect* and an *insect* *IS-A* *organism*.
 
-![Taxonomy example](./images/graph-clean.pdf "A bit of taxonomy")
+![Taxonomy example](./images/taxo.png "A bit of taxonomy")
 
 More formally, a taxonomy is a graph where the nodes are *entities* (like 
 *mosquito*, *insect*, and *organism*), and directed edges from entity
@@ -51,7 +51,7 @@ different structural constraints. Specifically, we tried algorithms that varied 
 
 This repo contains code for six algorithms, organized along those two axes:
 
-![Algorithm classification](./images/classification.pdf "Algorithm classification")
+![Algorithm classification](./images/organization.png "Algorithm classification")
 
 ## Contents
 
