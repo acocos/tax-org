@@ -38,7 +38,7 @@ relationship), and *taxonomy organization*. The code in this repo focuses
 on that final step.
 
 Taxonomy organization aims to choose the edges that should appear in a taxonomy. Its
-input is a set of entities $$E$$ and predicted relations between entity pairs [](https://latex.codecogs.com/gif.download?%5Cinline%20R%20%5Cin%20E%20%5Ctimes%20E).
+input is a set of entities $$E$$ and predicted relations between entity pairs ![](https://latex.codecogs.com/gif.download?%5Cinline%20R%20%5Cin%20E%20%5Ctimes%20E).
 Its output is the graph $$G(E, R^\prime)$$ where the subset of edges $$R^\prime$$ forms 
 a "valid" taxonomy. What "valid" means can differ depending on the algorithm used. Different
 versions of "valid" vary by the structural constraints imposed by each algorithm.
@@ -47,7 +47,7 @@ The goal of our paper was to compare different taxonomy organization algorithms 
 different structural constraints. Specifically, we tried algorithms that varied by:
 
 1. Whether the final graph should be a directed acyclic graph (DAG) or a tree
-2. Whether the final graph must explicitly contain transitive edges (i.e. if (*i-->j*) is an edge, and (*j-->k*) is an edge, then (*i-->k*) must also be an edge).
+2. Whether or not the final graph must explicitly contain transitive edges (i.e. if (*i-->j*) is an edge, and (*j-->k*) is an edge, then (*i-->k*) must also be an edge).
 
 This repo contains code for six algorithms, organized along those two axes:
 
