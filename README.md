@@ -75,6 +75,6 @@ This repo contains code for six algorithms, organized along those two axes:
 
 Run experiments to generate taxonomies for the entity sets in `/taxdata/terms_test` by running:
 
-'''
+```
 ./src/run_experiments.sh
-'''
+```
