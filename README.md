@@ -38,7 +38,7 @@ relationship), and *taxonomy organization*. The code in this repo focuses
 on that final step.
 
 Taxonomy organization aims to choose the edges that should appear in a taxonomy. Its
-input is a set of entities $$E$$ and predicted relations between entity pairs $$R \in E \times E$$.
+input is a set of entities $$E$$ and predicted relations between entity pairs [](https://latex.codecogs.com/gif.download?%5Cinline%20R%20%5Cin%20E%20%5Ctimes%20E).
 Its output is the graph $$G(E, R^\prime)$$ where the subset of edges $$R^\prime$$ forms 
 a "valid" taxonomy. What "valid" means can differ depending on the algorithm used. Different
 versions of "valid" vary by the structural constraints imposed by each algorithm.
@@ -54,4 +54,17 @@ This repo contains code for six algorithms, organized along those two axes:
 ![Algorithm classification](./images/classification.png "Algorithm classification")
 
 ## Contents
+
+- `/taxdata` -- contains test data from the paper, 
+
+## Getting started
+
+- Install requirements from `requirements.txt`
+- The transitive algorithms (MaxTransGraph and MaxTransGraph) are implemented with the [Gurobi](http://www.gurobi.com) optimization library. To run those models, you'll need to install Gurobi (free academic licenses available) and its Python API, `gurobipy`. 
+ 
+/src
+  /run_experiments.sh # runs tI for all algorithms
+  /tax_mst.py
+  ...
+  /utils.py
 
