@@ -134,7 +134,7 @@ def nx2dct(g):
   '''
   d = {'nodes': [], 'links': []}
   d['nodes'] = [{'name': n} for n in g.nodes()]
-  d['links'] = [{'source': s, 'target': t, 'relation': dat['relation'], 'weight': dat['weight']} for s,t,dat in g.edges(data=True)]
+  d['links'] = [{'source': s, 'target': t, 'relation': dat.get('relation', None), 'weight': dat.get('weight',None)} for s,t,dat in g.edges(data=True)]
   return d
 
 
